@@ -1,14 +1,15 @@
 #include <stdio.h>
 int main() {
-  float cambio, dolar, reais;
+  int valor, antecessor, sucessor;
   
-printf("Digite o valor do cambio agora:\n");
-  scanf("%f", &cambio);
+    printf("Me informe um valor inteiro: ");
+    scanf("%d", &valor);
+    
+     antecessor = valor - 1;
+     sucessor = valor + 1;
+  
+    printf("O antecessor de %d eh: %d\n", valor, antecessor);
+    printf("O sucessor de %d eh: %d\n", valor, sucessor);
 
-  printf("Digite quantos dolares você quer comprar\n");
-  scanf("%f", &dolar);
-
-  reais = dolar * cambio;
-  printf("São necessários %.1f reais para comprar %.1f dólares", reais, dolar);
-  return 0;
+    return 0;
 }
