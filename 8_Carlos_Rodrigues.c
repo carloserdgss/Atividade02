@@ -2,7 +2,9 @@
 int main() {
 
 float raio, volume, altura; 
+    
     printf("Me informe o raio de uma lata: \n");
+    
     scanf("%f", &raio);
     printf("Me informe a altura dessa lata: \n");
     
