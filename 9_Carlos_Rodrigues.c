@@ -1,14 +1,15 @@
 #include <stdio.h>
 int main() {
-  float valor_compra, valor_venda, imposto, a;
-  
-printf("Digite o valor da sua compra:\n");
-  scanf("%f", &valor_compra);
 
-  a = valor_compra * 0.2;
-  imposto = valor_compra * 0.3;
-  valor_venda = valor_compra + a + imposto;
+    float valor, valor_venda, repre, impo;
+    printf("Me informe o valor da sua compra: \n");
+    scanf("%f", &valor);
+    repre = valor * 0.20;
+    impo = valor * 0.30;
 
-  printf("O valor da sua venda é %.2f", valor_venda);
-  return 0;
+    valor_venda = valor + repre + impo;
+    
+    printf("O valor da sua compra é: %f", valor_venda);
+   
+    return 0;
 }
