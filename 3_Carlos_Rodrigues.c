@@ -1,11 +1,10 @@
-#include <stdio.h>
+int carlos_main() {
+    
+int ano_atual;
+    printf("Me informe o ano atual: \n");
+    scanf("%d", &ano_atual);
+    
+    printf("Ótimo, %d", ano_atual,"\n");
 
-int main(){
-int ano;
-
-  printf("Digite qual ano estamos: \n");
-  scanf("%d", &ano);
-  printf("Voce esta no ano: %d!!!", ano);
-  
-  return 0;
+    return 0;
 }
